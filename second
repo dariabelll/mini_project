@@ -40,10 +40,10 @@ def main():
                 running = False
             if event.type == pygame.KEYDOWN:
                 key = pygame.key.get_pressed()
-                if key[pygame.K_UP]:
+                if key[pygame.K_PAGEUP]:
                     if zoom != 21:
                         zoom += 1
-                if key[pygame.K_DOWN]:
+                if key[pygame.K_PAGEDOWN]:
                     if zoom != 0:
                         zoom -= 1
         load_img(zoom)
